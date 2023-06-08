@@ -1,0 +1,479 @@
+<!-- 1개 -->
+<div class="col">
+    <div class="card h-100">
+        <img src="https://i.namu.wiki/i/pvtXoRKkhJFJQX78XanG_20EhVsRkJ4C0pBINLeZx9IcsbzrI3f_xb-sUPVgG9h-c1Bn-9bbwunn_oWzKxMnNKATEuj7wtGc_jsGkRJ75JwbICLOwCpBzMeJSTaNHnaPl_vXIotqs5XipfrolBJfJw.webp"
+            class="card-img-top" alt="" type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop1">
+        <div class="card-body">
+            <h5 class="card-title text-center">이름</h5>
+            <p class="card-text text-center">MBTI</p>
+            <p class="card-text text-center">한줄 소개</p>
+        </div>
+        <!--modal 내부-->
+        <div class="modal fade" id="staticBackdrop1" tabindex="-1" aria-labelledby="card-name"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="card-name">전창민(MBTI)</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 상세페이지 시작 -->
+                        <div class="card mb-3 my-card" style="max-width: 1100px">
+                            <div class="row g-0" style="position: relative;">
+                                <div class="col-md-4">
+                                    <img src="https://i.namu.wiki/i/pvtXoRKkhJFJQX78XanG_20EhVsRkJ4C0pBINLeZx9IcsbzrI3f_xb-sUPVgG9h-c1Bn-9bbwunn_oWzKxMnNKATEuj7wtGc_jsGkRJ75JwbICLOwCpBzMeJSTaNHnaPl_vXIotqs5XipfrolBJfJw.webp"
+                                        class="img-fluid rounded-start" alt="..." />
+                                </div>
+                                <div class="col-md-8" style="display: flex; justify-content: center;">
+                                    <div class="card-body">
+                                        <p id="intro">1. 자신의 장점</p>
+                                        <div id="box" class="box text-box">대전에 사는 사람 한명과 서울에서 사는 사람
+                                            한명이 모였다는 의미로 D1S4라는 팀명을 지었습니다.
+                                            저희가 추구하는 목표는 이번 미니프로젝트에서 각각의 역할 분담을 다하고 의견을 추합하여
+                                            제출 기한 안에 제출을 하여 개발자로서의 목표에 한걸음 더 다가가는 것을 목표로 정했습니다.
+                                        </div>
+                                        <p id="intro">2. 자신의 스타일 협업 스타일 소개</p>
+                                        <div id="box" class="box text-box">대전에 사는 사람 한명과 서울에서 사는 사람
+                                            한명이 모였다는 의미로 D1S4라는 팀명을 지었습니다.
+                                            저희가 추구하는 목표는 이번 미니프로젝트에서 각각의 역할 분담을 다하고 의견을 추합하여
+                                            제출 기한 안에 제출을 하여 개발자로서의 목표에 한걸음 더 다가가는 것을 목표로 정했습니다.
+                                        </div>
+                                        <p id="intro">3. 블로그 주소</p>
+
+                                        <div id="box" class="box text-box">
+                                            <a href="https://www.naver.com">Text</a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-comment"
+                                        id="text-update-btn" onclick="text_update()">
+                                        변경
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating"
+                            style="width: 1100px; margin: auto; margin-top: 100px;">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">코멘트</label>
+                        </div>
+                        <div class="mybtns">
+                            <button type="button" class="btn btn-primary btn-comment"
+                                onclick="addcomments(1)">
+                                등록
+                            </button>
+                            <button type="button" class="close-btn btn btn-outline-primary">
+                                닫기
+                            </button>
+                        </div>
+                        <table class="table" style="width: 1100px; margin: auto;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">코멘트</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="order-box">
+                                <tr>
+                                    <td>좋네용 담에 또 올래요 !</td>
+                                    <td class="text-end" style="margin-left: auto;">
+                                        <button type="button" class="btn-sm btn-primary"
+                                            onclick="updatecomments()">수정</button>
+                                        <button type="button" class="btn-sm btn-outline-primary"
+                                            onclick="deletecomments()">삭제</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 상세페이지 끝 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 소개카드 1개분 끝 (이후 같은코드이니 위에 주석참고)-->
+<div class="col">
+    <div class="card h-100">
+        <img src="https://i.namu.wiki/i/o9SK1rVJ_KTFrkwSnJF7R4qs0C6-HvbJ5TxIWglJxNAbIXkAEqkBvFuanZCRf-vlNKZCvrGRgBCqrNdl3fiSBwPeCwqOGh_wPCWero0qt3qZxlwM6kcnGLsFG8sUTLmvPRMlFxiF3aK-5Kgb6JyiZg.webp"
+            class="card-img-top" alt="" type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop2">
+        <div class="card-body">
+            <h5 class="card-title text-center">이름</h5>
+            <p class="card-text text-center">MBTI</p>
+            <p class="card-text text-center">한줄 소개</p>
+        </div>
+        <div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="card-name"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="card-name">백승범(MBTI)</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 상세페이지 시작(백승범) -->
+                        <div class="card mb-3 my-card" style="max-width: 1100px">
+                            <div class="row g-0" style="position: relative;">
+                                <div class="col-md-4">
+                                    <img src="https://i.namu.wiki/i/o9SK1rVJ_KTFrkwSnJF7R4qs0C6-HvbJ5TxIWglJxNAbIXkAEqkBvFuanZCRf-vlNKZCvrGRgBCqrNdl3fiSBwPeCwqOGh_wPCWero0qt3qZxlwM6kcnGLsFG8sUTLmvPRMlFxiF3aK-5Kgb6JyiZg.webp"
+                                        class="img-fluid rounded-start" alt="..." />
+                                </div>
+                                <div class="col-md-8" style="display: flex; justify-content: center;">
+                                    <div class="card-body">
+                                        <p id="intro">1. 자신의 장점</p>
+                                        <div id="box" class="box text-box">대전에 사는 사람 한명과 서울에서 사는 사람
+                                            한명이 모였다는 의미로 D1S4라는 팀명을 지었습니다.
+                                            저희가 추구하는 목표는 이번 미니프로젝트에서 각각의 역할 분담을 다하고 의견을 추합하여
+                                            제출 기한 안에 제출을 하여 개발자로서의 목표에 한걸음 더 다가가는 것을 목표로 정했습니다.
+                                        </div>
+                                        <p id="intro">2. 자신의 스타일 협업 스타일 소개</p>
+                                        <div id="box" class="box text-box">대전에 사는 사람 한명과 서울에서 사는 사람
+                                            한명이 모였다는 의미로 D1S4라는 팀명을 지었습니다.
+                                            저희가 추구하는 목표는 이번 미니프로젝트에서 각각의 역할 분담을 다하고 의견을 추합하여
+                                            제출 기한 안에 제출을 하여 개발자로서의 목표에 한걸음 더 다가가는 것을 목표로 정했습니다.
+                                        </div>
+                                        <p id="intro">3. 블로그 주소</p>
+
+                                        <div id="box" class="box text-box">
+                                            <a href="https://www.naver.com">Text</a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-comment"
+                                        id="text-update-btn" onclick="text_update()">
+                                        변경
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating"
+                            style="width: 1100px; margin: auto; margin-top: 100px;">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">코멘트</label>
+                        </div>
+                        <div class="mybtns">
+                            <button type="button" class="btn btn-primary btn-comment"
+                                onclick="addcomments(2)">
+                                등록
+                            </button>
+                            <button type="button" class="close-btn btn btn-outline-primary">
+                                닫기
+                            </button>
+                        </div>
+                        <table class="table" style="width: 1100px; margin: auto;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">코멘트</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="order-box">
+                                <tr>
+                                    <td>좋네용 담에 또 올래요 !</td>
+                                    <td class="text-end" style="margin-left: auto;">
+                                        <button type="button" class="btn-sm btn-primary">수정</button>
+                                        <button type="button" class="btn-sm btn-outline-primary">
+                                            삭제
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 상세페이지 끝 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div class="card h-100">
+        <img src="https://i.namu.wiki/i/07QUoudbqRRmxGP_oSU7OgvjaOwzIAsCkZIPBw7aiyZqjOaLjxysoibKgrhJMjBEd3GWrcx42PyY-o6knJP_odHPn3FsUuOv3yDimfUsJamsonFGtJpY3TYdQ3z-n8OXDqIrfmA42lZ45SpFVcdOSQ.webp"
+            class="card-img-top" alt="" type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop3">
+        <div class="card-body">
+            <h5 class="card-title text-center">이름</h5>
+            <p class="card-text text-center">MBTI</p>
+            <p class="card-text text-center">한줄 소개</p>
+        </div>
+        <div class="modal fade" id="staticBackdrop3" tabindex="-1" aria-labelledby="card-name"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="card-name">손명지(MBTI)</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 상세페이지 시작(백승범) -->
+                        <div class="card mb-3 my-card" style="max-width: 1100px">
+                            <div class="row g-0" style="position: relative;">
+                                <div class="col-md-4">
+                                    <img src="https://i.namu.wiki/i/07QUoudbqRRmxGP_oSU7OgvjaOwzIAsCkZIPBw7aiyZqjOaLjxysoibKgrhJMjBEd3GWrcx42PyY-o6knJP_odHPn3FsUuOv3yDimfUsJamsonFGtJpY3TYdQ3z-n8OXDqIrfmA42lZ45SpFVcdOSQ.webp"
+                                        class="img-fluid rounded-start" alt="..." />
+                                </div>
+                                <div class="col-md-8" style="display: flex; justify-content: center;">
+                                    <div class="card-body">
+                                        <p id="intro">1. 자신의 장점</p>
+                                        <div id="box" class="box text-box">대전에 사는 사람 한명과 서울에서 사는 사람
+                                            한명이 모였다는 의미로 D1S4라는 팀명을 지었습니다.
+                                            저희가 추구하는 목표는 이번 미니프로젝트에서 각각의 역할 분담을 다하고 의견을 추합하여
+                                            제출 기한 안에 제출을 하여 개발자로서의 목표에 한걸음 더 다가가는 것을 목표로 정했습니다.
+                                        </div>
+                                        <p id="intro">2. 자신의 스타일 협업 스타일 소개</p>
+                                        <div id="box" class="box text-box">대전에 사는 사람 한명과 서울에서 사는 사람
+                                            한명이 모였다는 의미로 D1S4라는 팀명을 지었습니다.
+                                            저희가 추구하는 목표는 이번 미니프로젝트에서 각각의 역할 분담을 다하고 의견을 추합하여
+                                            제출 기한 안에 제출을 하여 개발자로서의 목표에 한걸음 더 다가가는 것을 목표로 정했습니다.
+                                        </div>
+                                        <p id="intro">3. 블로그 주소</p>
+
+                                        <div id="box" class="box text-box">
+                                            <a href="https://www.naver.com">Text</a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-comment"
+                                        id="text-update-btn" onclick="text_update()">
+                                        변경
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating"
+                            style="width: 1100px; margin: auto; margin-top: 100px;">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">코멘트</label>
+                        </div>
+                        <div class="mybtns">
+                            <button type="button" class="btn btn-primary btn-comment"
+                                onclick="addcomments(3)">
+                                등록
+                            </button>
+                            <button type="button" class="close-btn btn btn-outline-primary">
+                                닫기
+                            </button>
+                        </div>
+                        <table class="table" style="width: 1100px; margin: auto;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">코멘트</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="order-box">
+                                <tr>
+                                    <td>좋네용 담에 또 올래요 !</td>
+                                    <td class="text-end" style="margin-left: auto;">
+                                        <button type="button" class="btn-sm btn-primary">수정</button>
+                                        <button type="button" class="btn-sm btn-outline-primary">
+                                            삭제
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 상세페이지 끝 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div class="card h-100">
+        <img src="https://i.namu.wiki/i/FszhRVPQu05nS-3phj1RCbPwCC6ZhbYR-89OkqgYV1Fk2Y3EzOPyZTaaYWAwoYqwA1vm_yluWsxxRIYpEYZrufjlsEeAWgaSh-h7YbaflGj9pkgcyjfpK2oeVFGhNyblB7AwYONvB9A4-NElZsbfdw.webp"
+            class="card-img-top" alt="" type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop4">
+        <div class="card-body">
+            <h5 class="card-title text-center">이름</h5>
+            <p class="card-text text-center">MBTI</p>
+            <p class="card-text text-center">한줄 소개</p>
+        </div>
+        <div class="modal fade" id="staticBackdrop4" tabindex="-1" aria-labelledby="card-name"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="card-name">손민지(MBTI)</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 상세페이지 시작(백승범) -->
+                        <div class="card mb-3 my-card" style="max-width: 1100px">
+                            <div class="row g-0" style="position: relative;">
+                                <div class="col-md-4">
+                                    <img src="https://i.namu.wiki/i/FszhRVPQu05nS-3phj1RCbPwCC6ZhbYR-89OkqgYV1Fk2Y3EzOPyZTaaYWAwoYqwA1vm_yluWsxxRIYpEYZrufjlsEeAWgaSh-h7YbaflGj9pkgcyjfpK2oeVFGhNyblB7AwYONvB9A4-NElZsbfdw.webp"
+                                        class="img-fluid rounded-start" alt="..." />
+                                </div>
+                                <div class="col-md-8" style="display: flex; justify-content: center;">
+                                    <div class="card-body">
+                                        <p id="intro">1. 자신의 장점</p>
+                                        <div id="box" class="box text-box">대전에 사는 사람 한명과 서울에서 사는 사람
+                                            한명이 모였다는 의미로 D1S4라는 팀명을 지었습니다.
+                                            저희가 추구하는 목표는 이번 미니프로젝트에서 각각의 역할 분담을 다하고 의견을 추합하여
+                                            제출 기한 안에 제출을 하여 개발자로서의 목표에 한걸음 더 다가가는 것을 목표로 정했습니다.
+                                        </div>
+                                        <p id="intro">2. 자신의 스타일 협업 스타일 소개</p>
+                                        <div id="box" class="box text-box">대전에 사는 사람 한명과 서울에서 사는 사람
+                                            한명이 모였다는 의미로 D1S4라는 팀명을 지었습니다.
+                                            저희가 추구하는 목표는 이번 미니프로젝트에서 각각의 역할 분담을 다하고 의견을 추합하여
+                                            제출 기한 안에 제출을 하여 개발자로서의 목표에 한걸음 더 다가가는 것을 목표로 정했습니다.
+                                        </div>
+                                        <p id="intro">3. 블로그 주소</p>
+
+                                        <div id="box" class="box text-box">
+                                            <a href="https://www.naver.com">Text</a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-comment"
+                                        id="text-update-btn" onclick="text_update()">
+                                        변경
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating"
+                            style="width: 1100px; margin: auto; margin-top: 100px;">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">코멘트</label>
+                        </div>
+                        <div class="mybtns">
+                            <button type="button" class="btn btn-primary btn-comment"
+                                onclick="addcomments(4)">
+                                등록
+                            </button>
+                            <button type="button" class="close-btn btn btn-outline-primary">
+                                닫기
+                            </button>
+                        </div>
+                        <table class="table" style="width: 1100px; margin: auto;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">코멘트</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="order-box">
+                                <tr>
+                                    <td>좋네용 담에 또 올래요 !</td>
+                                    <td class="text-end" style="margin-left: auto;">
+                                        <button type="button" class="btn-sm btn-primary">수정</button>
+                                        <button type="button" class="btn-sm btn-outline-primary">
+                                            삭제
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- 상세페이지 끝 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <div class="card h-100">
+        <img src="https://i.namu.wiki/i/cu6pNMGTbk0b5kUZfmCaJ4yi7nZ_lGADGtmfyMSnNOPYLfpYG1OG2ZVJqKUn8VlKlIzkp39eOTdQrTNZeJl2gGZPamYSXX4FsrVp7EAgVK6EGX6JDIhbdZlihoctt1QDuBNcO77SKxHE4dKkRssOzw.webp"
+            class="card-img-top" alt="" type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop5">
+        <div class="card-body">
+            <h5 class="card-title text-center">이름</h5>
+            <p class="card-text text-center">MBTI</p>
+            <p class="card-text text-center">한줄 소개</p>
+        </div>
+        <div class="modal fade" id="staticBackdrop5" tabindex="-1" aria-labelledby="card-name"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="card-name">모성민(MBTI)</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 상세페이지(백승범) -->
+                        <div class="card mb-3 my-card" style="max-width: 1100px">
+                            <div class="row g-0" style="position: relative;">
+                                <div class="col-md-4">
+                                    <img src="https://i.namu.wiki/i/cu6pNMGTbk0b5kUZfmCaJ4yi7nZ_lGADGtmfyMSnNOPYLfpYG1OG2ZVJqKUn8VlKlIzkp39eOTdQrTNZeJl2gGZPamYSXX4FsrVp7EAgVK6EGX6JDIhbdZlihoctt1QDuBNcO77SKxHE4dKkRssOzw.webp"
+                                        class="img-fluid rounded-start" alt="..." />
+                                </div>
+                                <div class="col-md-8" style="display: flex; justify-content: center;">
+                                    <div class="card-body">
+                                        <p id="intro">1. 자신의 장점</p>
+                                        <div id="box" class="box text-box">대전에 사는 사람 한명과 서울에서 사는 사람
+                                            한명이 모였다는 의미로 D1S4라는 팀명을 지었습니다.
+                                            저희가 추구하는 목표는 이번 미니프로젝트에서 각각의 역할 분담을 다하고 의견을 추합하여
+                                            제출 기한 안에 제출을 하여 개발자로서의 목표에 한걸음 더 다가가는 것을 목표로 정했습니다.
+                                        </div>
+                                        <p id="intro">2. 자신의 스타일 협업 스타일 소개</p>
+                                        <div id="box" class="box text-box">대전에 사는 사람 한명과 서울에서 사는 사람
+                                            한명이 모였다는 의미로 D1S4라는 팀명을 지었습니다.
+                                            저희가 추구하는 목표는 이번 미니프로젝트에서 각각의 역할 분담을 다하고 의견을 추합하여
+                                            제출 기한 안에 제출을 하여 개발자로서의 목표에 한걸음 더 다가가는 것을 목표로 정했습니다.
+                                        </div>
+                                        <p id="intro">3. 블로그 주소</p>
+
+                                        <div id="box" class="box text-box">
+                                            <a href="https://www.naver.com">Text</a>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary btn-comment"
+                                        id="text-update-btn" onclick="text_update()">
+                                        변경
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating"
+                            style="width: 1100px; margin: auto; margin-top: 100px;">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">코멘트</label>
+                        </div>
+                        <div class="mybtns">
+                            <button type="button" class="btn btn-primary btn-comment"
+                                onclick="addcomments(5)">
+                                등록
+                            </button>
+                            <button type="button" class="close-btn btn btn-outline-primary">
+                                닫기
+                            </button>
+                        </div>
+                        <table class="table" style="width: 1100px; margin: auto;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">코멘트</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="order-box">
+                                <tr>
+                                    <td>좋네용 담에 또 올래요 !</td>
+                                    <td class="text-end" style="margin-left: auto;">
+                                        <button type="button" class="btn-sm btn-primary">수정</button>
+                                        <button type="button" class="btn-sm btn-outline-primary">
+                                            삭제
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </table>
+                        <!-- 상세페이지 끝 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
